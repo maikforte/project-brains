@@ -20,6 +20,7 @@ session reads what earlier sessions decided before changing anything.
 | `PROJECT.md` | Features, business rules, entities | When referenced |
 | `.claude/rules/*.md` | Short path-triggered reminders | When matching files are opened |
 | `.claude/settings.json` | Turns off Claude's commit and PR attribution | Every session (settings) |
+| `.gitignore` | Keeps `.env` secrets, `node_modules`, build output and Supabase CLI state out of git | No (git only) |
 | `docs/architecture/*.md` | Data layer, permissions, audit trail, migrations, testing | When a rule points there |
 | `docs/design/ui.md` | Visual design system | When a rule points there |
 | `docs/changelog/<feature>/` | Why things changed, per feature | Before touching that feature |

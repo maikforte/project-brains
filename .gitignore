@@ -1,0 +1,19 @@
+# Secrets: never committed. Copy .env.example instead.
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+storybook-static/
+*.local
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+
+# OS and editor
+.DS_Store
+Thumbs.db
