@@ -1,0 +1,21 @@
+# Normalise line endings on commit regardless of what wrote the file.
+#
+# Without this, any tool that rewrites a file in text mode on Windows silently
+# converts LF to CRLF, and git then reports every line of that file as changed.
+# A small change can then show up as thousands of changed lines and become
+# unreviewable.
+#
+# `text=auto` lets git decide what is text; `eol=lf` pins the committed form to LF.
+* text=auto eol=lf
+
+# Binary assets must never be touched.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.xlsx binary
